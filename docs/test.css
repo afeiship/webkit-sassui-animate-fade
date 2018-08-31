@@ -1,0 +1,53 @@
+/*webkit-sassui-animate-fade Start*/
+@keyframes webkit-sassui-animate-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes webkit-sassui-animate-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.webkit-sassui-animate-fade.visible-true, .webkit-sassui-animate-fade[data-visible=true] {
+  animation: webkit-sassui-animate-fade-in 300ms ease-in forwards;
+}
+
+.webkit-sassui-animate-fade, .webkit-sassui-animate-fade.visible-false, .webkit-sassui-animate-fade[data-visible=false] {
+  animation: webkit-sassui-animate-fade-out 300ms ease-in forwards;
+}
+
+/*webkit-sassui-animate-fade End*/
+.test-webkit-sassui-animate-fade {
+  border: 1px solid red;
+}
+
+.test-webkit-sassui-animate-fade h1 {
+  font-size: 18px;
+}
+
+.test-webkit-sassui-animate-fade p {
+  color: #999;
+}
+
+button {
+  border: none;
+  background: none;
+  width: 100%;
+  padding: 14px;
+  background: #4cd964;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+button:focus {
+  outline: none;
+}

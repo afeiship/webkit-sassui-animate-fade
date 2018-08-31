@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>webkit-sassui-animate-fade</title>
+  <link rel="stylesheet" href="./test.css">
+</head>
+
+<body>
+  <button id="btnIn">FadeIn</button>
+  <button id="btnOut">out</button>
+
+  <div class="webkit-sassui-animate-fade" hidden id="el">
+    <h1>Titlte</h1>
+    <p>descripsd lsdjfsldjflsdfjl lsdjflsdjfj</p>
+    <img src="http://placeholder.qiniudn.com/80x80" alt="">
+  </div>
+
+
+  <script>
+    var el = document.getElementById('el');
+    var btnIn = document.getElementById('btnIn');
+    var btnOut = document.getElementById('btnOut');
+
+    el.addEventListener('webkitAnimationEnd', function () {
+      if (el.getAttribute('data-visible') === 'false') {
+        el.setAttribute('hidden',true);
+      }
+    })
+
+
+    btnIn.onclick = function () {
+      el.removeAttribute('hidden');
+      el.setAttribute('data-visible', true);
+    }
+
+    btnOut.onclick = function () {
+      el.setAttribute('data-visible', false);
+    }
+  </script>
+</body>
+
+</html>

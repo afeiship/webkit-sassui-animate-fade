@@ -1,0 +1,29 @@
+{
+  "name": "webkit-sassui-animate-fade",
+  "description": "Webkit animate fade sass",
+  "main": [
+    "dist/webkit-sassui-animate-fade.css",
+    "dist/webkit-sassui-animate-fade.scss"
+  ],
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "webkit",
+    "cssui",
+    "animate-fade"
+  ],
+  "homepage": "https://github.com/afeiship/webkit-sassui-animate-fade",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ]
+}

@@ -1,0 +1,26 @@
+@import "../dist/webkit-sassui-animate-fade.scss";
+
+
+.test-webkit-sassui-animate-fade{
+  border:1px solid red;
+  h1{
+    font-size: 18px;
+  }
+  p{
+    color: #999;
+  }
+}
+
+button{
+  border: none;
+  background: none;
+  &:focus{
+    outline: none;
+  }
+
+  width:100%;
+  padding:14px;
+  background: #4cd964;
+  color: #fff;
+  margin-bottom: 10px;
+}
