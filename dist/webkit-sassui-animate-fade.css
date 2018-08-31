@@ -14,7 +14,7 @@
 .webkit-sassui-animate-fade.visible-true, .webkit-sassui-animate-fade[data-visible=true] {
   animation: webkit-sassui-animate-fade-in 300ms ease-in forwards; }
 
-.webkit-sassui-animate-fade, .webkit-sassui-animate-fade.visible-false, .webkit-sassui-animate-fade[data-visible=false] {
+.webkit-sassui-animate-fade.visible-false, .webkit-sassui-animate-fade[data-visible=false] {
   animation: webkit-sassui-animate-fade-out 300ms ease-in forwards; }
 
 /*webkit-sassui-animate-fade End*/

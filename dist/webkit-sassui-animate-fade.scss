@@ -33,7 +33,6 @@ $webkit-sassui-animate-fade-options:(
     animation: webkit-sassui-animate-fade-in $duration ease-in forwards;
   }
 
-  &,
   &.visible-false,
   &[data-visible=false] {
     animation: webkit-sassui-animate-fade-out $duration ease-in forwards;
