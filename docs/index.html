@@ -29,17 +29,16 @@
       if (el.getAttribute('data-visible') === 'false') {
         el.setAttribute('hidden',true);
       }
-    })
-
+    });
 
     btnIn.onclick = function () {
       el.removeAttribute('hidden');
       el.setAttribute('data-visible', true);
-    }
+    };
 
     btnOut.onclick = function () {
       el.setAttribute('data-visible', false);
-    }
+    };
   </script>
 </body>
 
