@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>webkit-sassui-animate-fade</title>
-  <link rel="stylesheet" href="./test.css">
+  <title>wsui-animate-fade</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+
   <button id="btnIn">FadeIn</button>
   <button id="btnOut">out</button>
 
-  <div class="webkit-sassui-animate-fade test-webkit-sassui-animate-fade" data-visible="false" hidden id="el">
+  <div class="wsui-animate-fade test-wsui-animate-fade" data-visible="false" hidden id="el">
     <h1>Titlte</h1>
     <p>descripsd lsdjfsldjflsdfjl lsdjflsdjfj</p>
     <img src="http://placeholder.qiniudn.com/80x80" alt="">
@@ -27,7 +27,7 @@
 
     el.addEventListener('webkitAnimationEnd', function () {
       if (el.getAttribute('data-visible') === 'false') {
-        el.setAttribute('hidden',true);
+        el.setAttribute('hidden', true);
       }
     });
 
@@ -40,6 +40,7 @@
       el.setAttribute('data-visible', false);
     };
   </script>
+
 </body>
 
 </html>

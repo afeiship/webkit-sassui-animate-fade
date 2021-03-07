@@ -1,0 +1,41 @@
+/*wsui-animate-fade Start*/
+$wsui-animate-fade-options:(
+  duration: 300ms,
+  opacity:(0,1)
+)!default;
+
+.wsui-animate-fade{
+  $duration: map-get($map: $wsui-animate-fade-options, $key: duration);
+  $opacity: map-get($map: $wsui-animate-fade-options, $key: opacity);
+  $opacity-start: nth($opacity,1);
+  $opacity-end: nth($opacity,2);
+
+  @keyframes wsui-animate-fade-in {
+    from {
+      opacity: $opacity-start;
+    }
+    to {
+      opacity: $opacity-end;
+    }
+  }
+
+  @keyframes wsui-animate-fade-out {
+    from {
+      opacity: $opacity-end;
+    }
+    to {
+      opacity: $opacity-start;
+    }
+  }
+
+  &.visible-true,
+  &[data-visible=true] {
+    animation: wsui-animate-fade-in $duration ease-in forwards;
+  }
+
+  &.visible-false,
+  &[data-visible=false] {
+    animation: wsui-animate-fade-out $duration ease-in forwards;
+  }
+}
+/*wsui-animate-fade End*/

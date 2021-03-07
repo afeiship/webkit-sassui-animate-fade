@@ -1,0 +1,41 @@
+/*!
+ * name: @jswork/wsui-animate-fade
+ * description: Webkit animate fade sass.
+ * homepage: https://github.com/afeiship/wsui-animate-fade
+ * version: 1.0.0
+ * date: 2021-03-07 20:37:15
+ * license: MIT
+ */
+/*wsui-animate-fade Start*/
+@-webkit-keyframes wsui-animate-fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes wsui-animate-fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes wsui-animate-fade-out {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes wsui-animate-fade-out {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+.wsui-animate-fade.visible-true, .wsui-animate-fade[data-visible=true] {
+  -webkit-animation: wsui-animate-fade-in 300ms ease-in forwards;
+          animation: wsui-animate-fade-in 300ms ease-in forwards; }
+
+.wsui-animate-fade.visible-false, .wsui-animate-fade[data-visible=false] {
+  -webkit-animation: wsui-animate-fade-out 300ms ease-in forwards;
+          animation: wsui-animate-fade-out 300ms ease-in forwards; }
+
+/*wsui-animate-fade End*/
